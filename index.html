@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"> </script>
+    <link rel="icon" href="pics/j-favicon.png"> <!-- placeholder icon-->
+
+    <!-- code appear as code on browser-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    
+    <script>hljs.highlightAll();</script>
+
+    
+    
+<!-- font style link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>jai.dev</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo-holder"> 
+            <div class = "logo"> jai.dev </div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="#about"> About </a></li>
+                <li><a href="#education"> Education </a></li>
+                <!--<li><a href="#contacts"> Contacts </a></li>-->
+                <li><a href="#projects"> Projects </a></li>
+            </ul>
+
+            <a class="mobile-nav" onClick= "toggleMobileNav();"> 
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                  </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-right">
+                
+                    <div class="text-container">
+                        <div class="text-title"></div>
+                            <h2 class => <small> Hey, my name's </small> Jai </h2>
+                            <h1> <small> I am a </small>     Software Engineer</h1>
+                        <div class="bio-text">
+                            <p>
+                                Based around the NYC area, double majoring in Computer Science and Data Science at Rutgers University focused on 
+                                software engineering and frontend development. <span>I build responsive, user-centered 
+                                interfaces, applying clean code and intuitive design to create impactful applications.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "bio-buttons">
+                        <a href="#" class="button left">
+                            My Resume
+                        </a>
+                        <a href="mailto:jpetal2005@gmail.com" class="button right">
+                            Contact Me
+                        </a>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jai-patel-426aba2a5" target = "_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/baabysoosh/baabysoosh" target = "_blank">
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a>
+                    </div>
+                
+            </div>
+
+            <div class="hero-left">             
+                    <img src="pics/headshot.jpg">
+            </div>
+        </section>
+
+        <div class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src = "./langs/html.png" alt = "HTML" >
+                    <img src = "./langs/css.png" alt = "CSS" >
+                    <img src = "./langs/javascript.png" alt = "JavaScript" >
+                    <img src = "./langs/sass.png" alt = "SASS">
+                    <img src = "./langs/react.png" alt = "React" >
+                    <img src = "./langs/java.png" alt = "Java" >
+                    <img src = "./langs/python.png" alt = "Python">
+                    <img src = "./langs/c++.png" alt = "C++" >
+                    <img src = "./langs/c.png" alt = "C" >
+                    <img src = "./langs/vscode.png" alt = "VSCode">
+                    <img src = "./langs/html.png" alt = "HTML" >
+                    <img src = "./langs/css.png" alt = "CSS" >
+                    <img src = "./langs/javascript.png" alt = "JavaScript" >
+                    <img src = "./langs/sass.png" alt = "SASS">
+                    <img src = "./langs/react.png" alt = "React" >
+                    <img src = "./langs/java.png" alt = "Java" >
+                    <img src = "./langs/python.png" alt = "Python">
+                    <img src = "./langs/c++.png" alt = "C++" >
+                    <img src = "./langs/c.png" alt = "C" >
+                    <img src = "./langs/vscode.png" alt = "VSCode">
+                </div>
+            </div>
+        </div>
+
+        <section id = "about" class = "about container">
+            <h2> About </h2>
+            <div class ="about content">
+                <div class="about-right">
+                    <div class="wrapper">
+                        <div class="container">
+                            <input type="radio" name="slide" id="c1" checked>
+                            <label for="c1" class="card">
+                            </label>
+                            <input type="radio" name="slide" id="c2" >
+                            <label for="c2" class="card">
+                            </label>
+                            <input type="radio" name="slide" id="c3" >
+                            <label for="c3" class="card">
+                            </label>
+                            <input type="radio" name="slide" id="c4" >
+                            <label for="c4" class="card">
+                            </label>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="about-left">  
+                    <pre>
+                        <code class="language-python">
+def about(){
+    #basic info
+    fname = 'Jai'
+    lname = 'Patel'
+    age = 19
+    htown = 'Little Ferry'
+    state = 'NJ'
+
+    #school
+    uni = 'Rutgers University (NB)'
+    major1 = 'Computer Science'
+    major2 = 'Data Science'
+
+    #more about me
+    interests = ['programming', 'UI/UX', 'mathematics', 'sports analytics']
+    hobbies = ['leetcode', 'lifting', 'running', 'fantasy football', 'binging cat posts']
+
+    isHardworking = True
+    isProblemSolver = True
+
+    fact1 = '11 is my favorite number'
+    fact2 = '2x Pinewood Derby Winner'
+
+    hotTake = 'Mesh shorts are the best clothing item.'
+
+}
+                        </code>
+                    </pre>       
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id = "education" class="education container">
+            <h2> Education </h2>
+            <div class="education content">
+                <div class="tab ru">
+                    <img src="pics/ru-logo.png" width="100"> 
+                    <h3>R<span class="abbrv">utgers</span>U<span class="abbrv">niversity</span></h3>
+                        <p>C<span class="abbrv">omputer</span>S<span class="abbrv">cience</span> (BS)</p>
+                        <p class="grad"> <span>Exp. Grad.</span> 2026 </p>    
+                    
+                </div>
+                <div class="tab ru">
+                    <img src="pics/ru-logo.png" width="100"> 
+                    <h3>R<span class="abbrv">utgers</span>U<span class="abbrv">niversity</span></h3>
+                        <p>D<span class="abbrv">ata</span>S<span class="abbrv">cience</span> (BS)</p>
+                        <p class="grad"> <span>Exp. Grad.</span> 2026 </p>
+                </div>
+                <div class="tab bcc">
+                    <img src="pics/bcc-logo.png" width="100">
+                    <h3>B<span class="abbrv">ergen</span>C<span class="abbrv">ommunity</span>C<span class="abbrv">ollege</span></h3>
+                        <p>G<span class="abbrv">eneral</span>S<span class="abbrv">tudies</span> (AS)</p>
+                        <p class="grad"> <span>Grad.</span> 2023 </p>
+                </div>
+            </div>
+        </section>
+
+        <section id = "projects" class="project container">
+            <h2> Projects (coming soon) </h2>
+            <div class="project content">
+                <div class="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+</body>
+</html>
